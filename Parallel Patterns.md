@@ -1,0 +1,6 @@
+Chapter 7 - [[Convolution]]
+Chapter 8 - [[Stencil]]
+Chapter 9 - [[Parallel Histogram]]
+Chapter 10 - [[Reduction and Minimizing Divergence]]
+Chapter 11 - [[Prefix Sum (Scan)]]
+Chapter 12 - [[Merge]]

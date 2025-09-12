@@ -1,0 +1,7 @@
+Chapter 13 - [[Sorting]]
+Chapter 14 - [[Sparse Matrix Computation]]
+Chapter 15 - [[Graph Traversal]]
+Chapter 16 - [[Deep Learning]]
+Chapter 17 - [[Iterative MRI Reconstruction]]
+Chapter 18 - [[Electrostatic Potential Map]]
+Chapter 19 - [[Parallel Programming and Computational Thinking]]

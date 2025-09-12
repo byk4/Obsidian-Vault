@@ -1,0 +1,205 @@
+{
+  "main": {
+    "id": "6bb1771586dde512",
+    "type": "split",
+    "children": [
+      {
+        "id": "73e66bfae78098c0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6bc3ea6604d7b9ed",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "48a6c9af28931ce1",
+    "type": "split",
+    "children": [
+      {
+        "id": "2dec45749693cf42",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5213ad8fe2dac8dc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "d93b2bae79ebb8cf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "5b136872b6c86866",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "71d5cab907e2f4a3",
+    "type": "split",
+    "children": [
+      {
+        "id": "65625e728fd99f98",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "415c7296c30017eb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "b403eb8cebd7abf1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Parallelism and Concurrent Programming.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Parallelism and Concurrent Programming"
+            }
+          },
+          {
+            "id": "4db5613a09e32aca",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "34de2188dccc474f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Parallelism and Concurrent Programming.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Parallelism and Concurrent Programming"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "github-sync:Sync with Remote": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "5213ad8fe2dac8dc",
+  "lastOpenFiles": [
+    "Pasted image 20250911140538.png",
+    "2025-09-13.md",
+    "Parallel Algorithms.md",
+    "GPU Programming.md",
+    "Engine Support Systems.md",
+    "Pasted image 20250911140527.png",
+    "Pasted image 20250911140325.png",
+    "Pasted image 20250911140310.png",
+    "Pasted image 20250911115743.png",
+    "Pasted image 20250911114116.png",
+    "Pasted image 20250911111927.png",
+    "Pasted image 20250911110751.png",
+    "Low Level Engine Design.md",
+    "Game Engine Architecture.md",
+    "Using Buffers.md",
+    "DirectX 12.md",
+    "What is GPU and how to program it.md",
+    "Introduction to Game Engine Architecture.md",
+    "SIMD.md",
+    "Graphics Motion and Sound.md",
+    "Programming Massively Parallel Processors.md",
+    "Fundamental Concepts of Programming Massively Parallel Processors.md",
+    "Introduction to workings of DirectX12.md",
+    "Pasted image 20250909205711.png",
+    "Pasted image 20250909205249.png",
+    "CUDA Introduction.md",
+    "GPU Architecture Overview.md",
+    "CIS 5650 - GPU Programming.md",
+    "Advanced Patterns And Applications.md",
+    "Real Time Rendering.md",
+    "Advanced Practices.md",
+    "Parallel Patterns.md",
+    "Parallelism and Concurrent Programming.md",
+    "real time rendering.md",
+    "create a link.md"
+  ]
+}
