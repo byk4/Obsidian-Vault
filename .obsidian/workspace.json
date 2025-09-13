@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-09-13.md",
+                "file": "CUDA Performance.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-09-13"
+              "title": "CUDA Performance"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "71d5cab907e2f4a3",
@@ -94,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2025-09-13.md",
+                "file": "CUDA Performance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-09-13"
+              "title": "Backlinks for CUDA Performance"
             }
           },
           {
@@ -113,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2025-09-13.md",
+                "file": "CUDA Performance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-09-13"
+              "title": "Outgoing links from CUDA Performance"
             }
           },
           {
@@ -155,7 +156,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,11 +173,12 @@
   },
   "active": "6bc3ea6604d7b9ed",
   "lastOpenFiles": [
-    "GPU Programming.md",
-    "Untitled.md",
     "CIS 5650 - GPU Programming.md",
-    "Pasted image 20250911140538.png",
+    "CUDA Performance.md",
+    "GPU Programming.md",
     "2025-09-13.md",
+    "Untitled.md",
+    "Pasted image 20250911140538.png",
     "Parallel Algorithms.md",
     "Engine Support Systems.md",
     "Pasted image 20250911140527.png",
@@ -205,7 +208,6 @@
     "Advanced Practices.md",
     "Parallel Patterns.md",
     "Parallelism and Concurrent Programming.md",
-    "real time rendering.md",
-    "create a link.md"
+    "real time rendering.md"
   ]
 }
