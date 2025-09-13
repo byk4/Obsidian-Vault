@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Parallelism and Concurrent Programming.md",
+                "file": "GPU Programming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Parallelism and Concurrent Programming"
+              "title": "Outgoing links from GPU Programming"
             }
           },
           {
