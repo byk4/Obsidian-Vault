@@ -37,5 +37,36 @@ This ensures proper alignment regardless of alignment size.
 
 # Descriptor Management
 
-We have used descriptor heaps for color buffer
+We have used descriptor heaps for color buffers. Now, we will create a similar structure for depth buffer descriptors to manage them efficiently, similar to linear arena but storing an array of descriptors
+
+# Copying Model Data to the GPU
+We want to load the Sponza model resouces (textures, vertex buffers, index buffers, etc.) into the GPU. 
+
+- The Upload heap is special RAM where the CPU can read/write and the GPU can read. However GPU can access from the Upload heap is lower than access to the default heap. 
+
+- We use upload heap to stage data and then instruct the GPU to copy it to resources in default heap (VRAM) 
+
+So the full data copy process looks like
+1. CPU -> Upload Heap (RAM)
+2. Upload Heap -> Default Heap (VRAM)
+
+Copy from GPU to CPU is similar but it uses *Read Back Heap*
+
+Since this process is slow it's important to minimize data transfers between CPU and GPU unless absolutely required. 
+
+## STEPS TO IMPLEMENT DATA COPYING
+
+1. Create all model resources using __LINEAR AREANA__ in the __DEFAULT HEAP__
+2. Independently allocate space in the __UPLOAD HEAP__ for each resource.
+3. For each resource, store the data to be copied in the __UPLOAD HEAP__ 
+4. Record the GPU copy commands in the __COMMAND LIST__ 
+5. Before rendering the frame, execute the __COMMAND LIST__ and wait for the copy to finish
+6. Clear the __UPLOAD ARENA__ (reset `Used` to zero) to reuse the memory for future transfers  
+
+### Special Case: Copying textures
+
+It's slightly more complicated that buffers. Each texel row occupies a certain amount of memory. DX 12 requires the number of bytes per texel row be a multiple of `D3D12_TEXTURE_DATA_PITCH_ALIGNMENT` (256 bytes) when in the __UPLOAD HEAP__
+
+For ex. If row is not multiple of 256 bytes padding m
+
 
