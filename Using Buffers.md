@@ -42,7 +42,7 @@ We have used descriptor heaps for color buffers. Now, we will create a similar s
 # Copying Model Data to the GPU
 We want to load the Sponza model resouces (textures, vertex buffers, index buffers, etc.) into the GPU. 
 
-- The Upload heap is special RAM where the CPU can read/write and the GPU can read. However GPU can access from the Upload heap is lower than access to the default heap. 
+- The Upload heap is special RAM where the CPU can read/write and the GPU can read. However GPU can access from the Upload heap is slower than access to the default heap. 
 
 - We use upload heap to stage data and then instruct the GPU to copy it to resources in default heap (VRAM) 
 
@@ -68,5 +68,3 @@ Since this process is slow it's important to minimize data transfers between CPU
 It's slightly more complicated that buffers. Each texel row occupies a certain amount of memory. DX 12 requires the number of bytes per texel row be a multiple of `D3D12_TEXTURE_DATA_PITCH_ALIGNMENT` (256 bytes) when in the __UPLOAD HEAP__
 
 For ex. If row is not multiple of 256 bytes padding must be added to meet the requirements.
-
-

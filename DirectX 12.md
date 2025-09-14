@@ -3,7 +3,7 @@
 - [ ] [[SIMD]]
 - [x] [[What is GPU and how to program it]]
 - [x] [[Introduction to workings of DirectX12]]
-- [ ] [[Using Buffers]]
+- [x] [[Using Buffers]]
 - [ ] [[Shaders in DirectX12]]
 - [ ] [[MIP and anisotropic filtering]]
 - [ ] [[Fong model]]

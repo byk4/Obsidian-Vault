@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Using Buffers.md",
+                "file": "Shaders in DirectX12.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Using Buffers"
+              "title": "Shaders in DirectX12"
             }
           }
         ]
@@ -173,6 +173,10 @@
   },
   "active": "6bc3ea6604d7b9ed",
   "lastOpenFiles": [
+    "DirectX 12.md",
+    "Shaders in DirectX12.md",
+    "Using Buffers.md",
+    "[[CUDA.md",
     "GPU Programming.md",
     "2025-09-13.md",
     "Untitled.md",
@@ -190,8 +194,6 @@
     "Pasted image 20250911110751.png",
     "Low Level Engine Design.md",
     "Game Engine Architecture.md",
-    "Using Buffers.md",
-    "DirectX 12.md",
     "What is GPU and how to program it.md",
     "Introduction to Game Engine Architecture.md",
     "SIMD.md",
@@ -206,8 +208,6 @@
     "Advanced Patterns And Applications.md",
     "Real Time Rendering.md",
     "Advanced Practices.md",
-    "Parallel Patterns.md",
-    "Parallelism and Concurrent Programming.md",
-    "real time rendering.md"
+    "Parallel Patterns.md"
   ]
 }
