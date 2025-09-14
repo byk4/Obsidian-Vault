@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CUDA Performance.md",
+                "file": "Using Buffers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CUDA Performance"
+              "title": "Using Buffers"
             }
           }
         ]
@@ -173,11 +173,11 @@
   },
   "active": "6bc3ea6604d7b9ed",
   "lastOpenFiles": [
-    "CIS 5650 - GPU Programming.md",
-    "CUDA Performance.md",
     "GPU Programming.md",
     "2025-09-13.md",
     "Untitled.md",
+    "CUDA Performance.md",
+    "CIS 5650 - GPU Programming.md",
     "Pasted image 20250911140538.png",
     "Parallel Algorithms.md",
     "Engine Support Systems.md",

@@ -1,7 +1,5 @@
-# Memory Allocation
+We have created our first Dx 12 application that clears the color buffer. In this part we will create a depth buffer at the start and clear it every frame. After that we will see how to copy the sponza model to the GPU. 
 
-To create a depth buffer we need to allocate memory in the GPU. This can be done using `ID3D12Heap`. Heap is a segmented part of memory. In the CPU the heap is used for dynamic memory allocations. In GPUs there are different types of heaps that are used for different operations
+# Allocation of memory to the depth buffer
 
-For now we just want to allocate a depth buffer in VRAM, and we'll use the default heap for this. The default heap is the memory in the VRAM. The GPU can read/write to this memory. This is the fastest of all heaps. But CPU can't access it. 
-
-First, use `CreateHeap()` to allocate memory for the depth buffer. The CPU tells the GPU that our application is using this part of the memory. Next call the `CreatePlacedResource()` to indicate that this memory contains a depth buffer. After that we can use this resource in the lists of commands that we need to send to the GPU. 
+To create a depth buffer we need to allocate memory on the GPU. This is done using an `ID3D12Heap`. A heap is a segmented part of the memory. ON the CPU heaps are generally used for dynamic memory allocation. On the GPU, there are different kinds of heaps used for different purposes. For now we need 
