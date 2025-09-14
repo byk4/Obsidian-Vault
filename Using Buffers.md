@@ -23,3 +23,19 @@ One important characteristic of a linear arena is that it cannot easily release 
 
 # Memory Alignment
 
+Processors perform better when pointers are aligned to the power of 2. In GPUs alignment isn't just for performance; it's often mandatory. Some resources will only work if their starting address is properly aligned
+
+For ex. If the alignment is 8 bytes that start address plus `Used` must always be multiple of 8.
+
+We can use bit operations to calculate the aligned address. The general rule is:
+
+``` c
+nextAlignedAddress = (currentAddress + alignment - 1) & ~(alignment-1)
+```
+
+This ensures proper alignment regardless of alignment size. 
+
+# Descriptor Management
+
+We have used descriptor heaps for color buffer
+
