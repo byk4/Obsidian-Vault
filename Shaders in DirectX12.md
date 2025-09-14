@@ -83,11 +83,20 @@ TO pass the input textures and buffers to the shaders we use root signatures. Th
 
 - It contains an array of *descriptor tables*
 - Each descriptor table maps a range of descriptors from a heap to shader registers
-- A root signature may contain many descriptors tables form diffrent descriptor heaps
+- A root signature may contain many descriptors tables form different descriptor heaps
 
 Additionally samplers can be passed in two ways:
 1. Create descriptors that contains samplers
 2. Define *static samplers* in root signature that are easier to implement 
+
+In HLSL the `register()` keyword is used to assign a shader resource (line texture, sampler, constant buffer, UAV) to specific shader register slot.  
+
+This tells compiler exactly where to bind that resource in the GPU pipeline allowing the application to know the binding location when creating descriptors in DX 12
+
+`t0` means *Texture Register 0*. Bind Texture2D object named Texture to texture register slot 0
+
+`s0` means *Sampler Register 0*. Bind `SamplerState` object named `BilinearSampler` to texture register slot 0
+
 
 # Blending State
 When drawing pixels we want the pixel shader result to overwrite the existing color buffer contents assuming the depth test passed and the pixel is closest to the camera.
