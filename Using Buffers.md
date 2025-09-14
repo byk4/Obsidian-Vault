@@ -67,6 +67,6 @@ Since this process is slow it's important to minimize data transfers between CPU
 
 It's slightly more complicated that buffers. Each texel row occupies a certain amount of memory. DX 12 requires the number of bytes per texel row be a multiple of `D3D12_TEXTURE_DATA_PITCH_ALIGNMENT` (256 bytes) when in the __UPLOAD HEAP__
 
-For ex. If row is not multiple of 256 bytes padding m
+For ex. If row is not multiple of 256 bytes padding must be added to meet the requirements.
 
 
