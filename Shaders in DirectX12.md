@@ -67,11 +67,36 @@ ps_output ModelPSMain(ps_input Input)
 
 Once shaders are compiled, we include them in our program using `ID3D12Pipeline` This object stores all data related to the graphics pipeline. When we issue a draw command in the command list, we bind the pipeline so the GPU knows how to process the model
 
+# Kinds of Descriptors
 There are several kinds of descriptors used to pass data to the shaders
 
+| Views                       | Descriptions                                             |
+| --------------------------- | -------------------------------------------------------- |
+| Constant Buffer View        | Describe the constant buffers<br>                        |
+| Shader Resource View        | Describe textures and large constant buffers             |
+| Unordered Access View (UAV) | Describe buffers/textures when shaders will value        |
+| Sampler                     | Describe how to sample textures (eg. Bilinear filtering) |
 
-| Views                       | Descriptions                                 |
-| --------------------------- | -------------------------------------------- |
-| Constant Buffer View        | Describe the constant buffers<br>            |
-| Shader Resource View        | Describe textures and large constant buffers |
-| Unordered Access View (UAV) | Describe buffers/textures when shaders will  |
+# Passing Data to shaders
+
+TO pass the input textures and buffers to the shaders we use root signatures. The root signatures describe how the descriptors are repackaged so shaders can access them in an organized manner. 
+
+- It contains an array of *descriptor tables*
+- Each descriptor table maps a range of descriptors from a heap to shader registers
+- A root signature may contain many descriptors tables form diffrent descriptor heaps
+
+Additionally samplers can be passed in two ways:
+1. Create descriptors that contains samplers
+2. Define *static samplers* in root signature that are easier to implement 
+
+# Blending State
+When drawing pixels we want the pixel shader result to overwrite the existing color buffer contents assuming the depth test passed and the pixel is closest to the camera.
+
+Blending controls how the new pixel color and the existing color are combined
+
+The resulting color is computed as:
+>  ResultColor = BlendOp(SrcColor x SrcBlend, DestColor x DestBlend)
+>  ResultAlpha = BlendOpAlpha(SrcAlpha x SrcBlendAlpha, DestAlpha x DestBlendAlpha)
+
+For our purposes we will configure the blend state such that it just overwrites the new fragment color over the old one.  
+
