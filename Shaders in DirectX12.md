@@ -97,7 +97,6 @@ This tells compiler exactly where to bind that resource in the GPU pipeline allo
 
 `s0` means *Sampler Register 0*. Bind `SamplerState` object named `BilinearSampler` to texture register slot 0
 
-
 # Blending State
 When drawing pixels we want the pixel shader result to overwrite the existing color buffer contents assuming the depth test passed and the pixel is closest to the camera.
 
